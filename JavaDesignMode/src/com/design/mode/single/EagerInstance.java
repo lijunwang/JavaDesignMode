@@ -17,4 +17,8 @@ public class EagerInstance {
 	public static EagerInstance getInstance() {
 		return mInstance;
 	}
+	
+	public static void test() {
+		System.out.println("EagerInstance test() ...");
+	}
 }

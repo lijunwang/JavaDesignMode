@@ -78,7 +78,6 @@ public class LazyInstance {
 	// 正确的单例模式三、静态(static)内部类;Initialization Demand Holder (IoDH)
 	private static class HolderClass {
 		private static LazyInstance mLazyInstance = new LazyInstance();
-
 		public static LazyInstance getInstance() {
 			return mLazyInstance;
 		}
@@ -86,5 +85,9 @@ public class LazyInstance {
 	
 	public static LazyInstance getInstanceRight3(){
 		return HolderClass.getInstance();
+	}
+	
+	public static void test(){
+		System.out.println("LazyInstance test() ...");
 	}
 }
